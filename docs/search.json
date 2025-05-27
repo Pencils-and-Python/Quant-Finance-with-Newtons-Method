@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "reports/00_executive_summary.html",
+    "href": "reports/00_executive_summary.html",
+    "title": "Executive Summary",
+    "section": "",
+    "text": "1 Executive Summary\nThis report explores the use of Newton’s Method to solve for the implied volatility (IV) of a European call option, given a market price.\nThe objective is to demonstrate how a classic numerical technique can be applied in financial modeling to reverse-engineer market expectations using Python.\nThis project reflects a practical, hands-on application of numerical methods in a real-world financial context — cleanly implemented, modular, and ready for further extension.",
+    "crumbs": [
+      "Executive Summary"
+    ]
+  },
+  {
+    "objectID": "reports/01_problem_statement.html",
+    "href": "reports/01_problem_statement.html",
+    "title": "Problem Statement",
+    "section": "",
+    "text": "1 Problem Statement\nImplied volatility is a key input to pricing derivatives, yet it is not directly observable in the market.\nGiven a market-observed option price, our goal is to find the value of volatility ( ) such that the Black-Scholes formula outputs that price:\n[ f() = BS() - P_{} = 0 ]\nThis is a root-finding problem — and a perfect use case for Newton’s Method.",
+    "crumbs": [
+      "Executive Summary",
+      "Problem Statement"
+    ]
+  },
+  {
+    "objectID": "reports/03_python_implementation.html",
+    "href": "reports/03_python_implementation.html",
+    "title": "Python Implementation",
+    "section": "",
+    "text": "1 Python Implementation\nfrom src.iv_solver import implied_vol_newton\niv = implied_vol_newton( C_market=9.5, S=100, K=105, T=1.0, r=0.05 ) print(f”Estimated Implied Volatility: {iv:.4f}“)",
+    "crumbs": [
+      "Executive Summary",
+      "Python Implementation"
+    ]
+  },
+  {
+    "objectID": "reports/02_methodology.html",
+    "href": "reports/02_methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "[ f() = C_{}() - C_{} ]\n\n\n\n[ _{n+1} = _n - ]\n\n\n\n[ = ]\nImplementation uses: - bs_model.py for pricing and Vega - iv_solver.py for root-finding",
+    "crumbs": [
+      "Executive Summary",
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "reports/02_methodology.html#step-1-use-black-scholes-pricing-as-a-function-of",
+    "href": "reports/02_methodology.html#step-1-use-black-scholes-pricing-as-a-function-of",
+    "title": "Methodology",
+    "section": "",
+    "text": "[ f() = C_{}() - C_{} ]",
+    "crumbs": [
+      "Executive Summary",
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "reports/02_methodology.html#step-2-apply-newtons-method",
+    "href": "reports/02_methodology.html#step-2-apply-newtons-method",
+    "title": "Methodology",
+    "section": "",
+    "text": "[ _{n+1} = _n - ]",
+    "crumbs": [
+      "Executive Summary",
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "reports/02_methodology.html#step-3-compute-f-via-vega",
+    "href": "reports/02_methodology.html#step-3-compute-f-via-vega",
+    "title": "Methodology",
+    "section": "",
+    "text": "[ = ]\nImplementation uses: - bs_model.py for pricing and Vega - iv_solver.py for root-finding",
+    "crumbs": [
+      "Executive Summary",
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "reports/04_results_and_discussion.html",
+    "href": "reports/04_results_and_discussion.html",
+    "title": "Results and Discussion",
+    "section": "",
+    "text": "1 Results and Discussion\n\nDisplay estimated IV\nDiscuss Newton’s Method convergence behavior\nHighlight edge cases and sensitivity to initial guess",
+    "crumbs": [
+      "Executive Summary",
+      "Results and Discussion"
+    ]
+  },
+  {
+    "objectID": "reports/05_limitations_and_next.html",
+    "href": "reports/05_limitations_and_next.html",
+    "title": "Limitations and Next Steps",
+    "section": "",
+    "text": "1 Limitations\n\nNewton’s Method requires non-zero vega and good initial guess\nBlack-Scholes assumes constant volatility and European-style options\n\n\n\n2 Next Steps\n\nAdd Brent’s Method as a fallback\nExtend to implied volatility surfaces\nDevelop a Streamlit app for interactive use",
+    "crumbs": [
+      "Executive Summary",
+      "Limitations and Next Steps"
+    ]
+  }
+]

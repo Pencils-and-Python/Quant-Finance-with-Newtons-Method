@@ -1,0 +1,28 @@
+---
+title: "Methodology"
+format: html
+---
+
+# Methodology
+
+## Step 1: Use Black-Scholes pricing as a function of \( \sigma \)
+
+\[
+f(\sigma) = C_{\text{BS}}(\sigma) - C_{\text{market}}
+\]
+
+## Step 2: Apply Newton’s Method
+
+\[
+\sigma_{n+1} = \sigma_n - \frac{f(\sigma_n)}{f'(\sigma_n)}
+\]
+
+## Step 3: Compute \( f'(\sigma) \) via Vega
+
+\[
+\text{Vega} = \frac{\partial C}{\partial \sigma}
+\]
+
+Implementation uses:
+- `bs_model.py` for pricing and Vega
+- `iv_solver.py` for root-finding

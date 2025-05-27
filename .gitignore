@@ -52,3 +52,47 @@ _quarto/
 
 # If you render reports temporarily into other folders
 output/
+
+/_quarto/
+
+# Ignore Quarto render artifacts you don't want tracked
+docs/planning/
+*.ipynb_checkpoints/
+__pycache__/
+
+
+/.quarto/
+
+# Python cache and bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Quarto render cache
+_freeze/
+*.ipynb_checkpoints/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Optional: ignore your internal planning drafts if not public
+_planning/
+
+# Optional: ignore local preview server files
+.quarto-preview/
+
+# Ignore local outputs if you export PDF/docx
+*.pdf
+*.docx
+*.epub
+
+
+docs/site_libs/

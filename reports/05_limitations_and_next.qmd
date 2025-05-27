@@ -1,0 +1,15 @@
+---
+title: "Limitations and Next Steps"
+format: html
+---
+
+# Limitations
+
+- Newton’s Method requires non-zero vega and good initial guess
+- Black-Scholes assumes constant volatility and European-style options
+
+# Next Steps
+
+- Add Brent’s Method as a fallback
+- Extend to implied volatility surfaces
+- Develop a Streamlit app for interactive use

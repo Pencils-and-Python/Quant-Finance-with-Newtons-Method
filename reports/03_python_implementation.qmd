@@ -1,0 +1,15 @@
+---
+title: "Python Implementation"
+format: html
+jupyter: python3
+---
+
+# Python Implementation
+
+```{python}
+from src.iv_solver import implied_vol_newton
+
+iv = implied_vol_newton(
+    C_market=9.5, S=100, K=105, T=1.0, r=0.05
+)
+print(f"Estimated Implied Volatility: {iv:.4f}")

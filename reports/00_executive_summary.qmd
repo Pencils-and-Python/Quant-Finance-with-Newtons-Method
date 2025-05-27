@@ -1,0 +1,12 @@
+---
+title: "Executive Summary"
+format: html
+---
+
+# Executive Summary
+
+This report explores the use of Newton’s Method to solve for the implied volatility (IV) of a European call option, given a market price.
+
+The objective is to demonstrate how a classic numerical technique can be applied in financial modeling to reverse-engineer market expectations using Python.
+
+This project reflects a practical, hands-on application of numerical methods in a real-world financial context — cleanly implemented, modular, and ready for further extension.

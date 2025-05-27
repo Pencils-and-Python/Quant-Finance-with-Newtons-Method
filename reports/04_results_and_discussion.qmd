@@ -1,0 +1,12 @@
+
+---
+title: "Results and Discussion"
+format: html
+jupyter: python3
+---
+
+# Results and Discussion
+
+- Display estimated IV
+- Discuss Newton’s Method convergence behavior
+- Highlight edge cases and sensitivity to initial guess

@@ -1,0 +1,16 @@
+---
+title: "Problem Statement"
+format: html
+---
+
+# Problem Statement
+
+Implied volatility is a key input to pricing derivatives, yet it is not directly observable in the market.
+
+Given a market-observed option price, our goal is to find the value of volatility \( \sigma \) such that the Black-Scholes formula outputs that price:
+
+\[
+f(\sigma) = BS(\sigma) - P_{\text{market}} = 0
+\]
+
+This is a root-finding problem — and a perfect use case for Newton’s Method.

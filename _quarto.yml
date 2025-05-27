@@ -7,13 +7,24 @@ website:
   site-url: "https://github.com/Pencils-and-Python/Quant-Finance-with-Newtons-Method"
   navbar:
     left:
-      - text: "Report"
-        file: reports/implied_volatility_report.qmd
+      - text: "Executive Summary"
+        file: reports/00_executive_summary.qmd
+      - text: "Methodology"
+        file: reports/02_methodology.qmd
+      - text: "Code"
+        file: reports/03_python_implementation.qmd
+      - text: "Results"
+        file: reports/04_results_and_discussion.qmd
   sidebar:
     style: "docked"
     search: true
     contents:
-      - reports/implied_volatility_report.qmd
+      - reports/00_executive_summary.qmd
+      - reports/01_problem_statement.qmd
+      - reports/02_methodology.qmd
+      - reports/03_python_implementation.qmd
+      - reports/04_results_and_discussion.qmd
+      - reports/05_limitations_and_next.qmd
 
 format:
   html:
@@ -24,6 +35,8 @@ format:
     code-fold: true
     code-tools: true
     highlight-style: github
+    self-contained: false   # ✅ THIS tells Quarto to use external assets
+
 
 execute:
   echo: true
