@@ -4,9 +4,9 @@
 Keywords: implied volatility, newton’s method, black-scholes, quant finance, numerical methods, python, scipy, root finding, volatility modeling, financial engineering, computational finance
 -->
 
-This project explores the use of **Newton’s Method**, a classic root-finding algorithm, to estimate **implied volatility** from observed market prices using the **Black-Scholes** model.
+This project demonstrates how to use **Newton’s Method** to solve a **nonlinear root-finding problem** in a quantitative finance context. Specifically, it estimates the **implied volatility** of a European call option using the **Black-Scholes pricing model**.
 
-The work bridges **numerical methods**, **financial modeling**, and **Python implementation**, and is part of my broader transition from civil engineering into quantitative finance.
+Built in **Python**, this modular implementation uses **SciPy**, **NumPy**, and Streamlit to showcase both analytical depth and interactive tooling. This project is part of my transition from civil engineering to quantitative modeling, with a focus on **numerical optimization**, **financial modeling**, and **computational problem solving**.
 
 ---
 
