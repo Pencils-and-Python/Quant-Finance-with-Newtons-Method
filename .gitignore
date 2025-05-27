@@ -1,0 +1,43 @@
+# Conda environment
+/env/
+/venv/
+*.pyc
+__pycache__/
+.Python
+conda-env/
+
+# JetBrains IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
+
+# Cache directories
+.cache/
+.pytest_cache/
+
+# Miscellaneous
+.DS_Store
