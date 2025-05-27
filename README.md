@@ -70,6 +70,18 @@ quarto render reports/implied_volatility_report.qmd --output-dir docs/
 
 ---
 
+## 🔑 Featured Skills & Concepts
+
+- Numerical root-finding with Newton’s Method
+- Black-Scholes option pricing model
+- Implied volatility estimation
+- Python scientific computing with SciPy/NumPy
+- Modular code architecture for finance tools
+- Streamlit UI for interactive financial modeling
+- Multi-page technical documentation using Quarto
+
+---
+
 ## 📦 Deliverables
 
 - ✅ Python implementation of Newton’s Method
