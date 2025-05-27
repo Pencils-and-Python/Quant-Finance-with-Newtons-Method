@@ -41,3 +41,14 @@ htmlcov/
 
 # Miscellaneous
 .DS_Store
+
+# Ignore Quarto cache files
+_quarto/
+
+# Ignore rendered formats you don’t want to commit
+*.pdf
+*.docx
+*.epub
+
+# If you render reports temporarily into other folders
+output/

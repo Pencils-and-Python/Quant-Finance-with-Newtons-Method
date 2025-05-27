@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Estimating Implied Volatility"
+  site-url: "https://github.com/Pencils-and-Python/Quant-Finance-with-Newtons-Method"
+  navbar:
+    left:
+      - text: "Report"
+        file: reports/implied_volatility_report.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - reports/implied_volatility_report.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    highlight-style: github
+
+execute:
+  echo: true
+  warning: false
+  freeze: auto
